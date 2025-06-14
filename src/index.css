@@ -1,4 +1,7 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   /* (Dark Mode Elements) */
   --color-Blue-900: hsl(209, 23%, 22%);
@@ -13,6 +16,7 @@
   /* (Dark Mode Text & Light Mode Elements) */
   --color-White: hsl(0, 100%, 100%);
 }
+
 @theme {
   /* (Dark Mode Elements) */
   --color-Blue-900: hsl(209, 23%, 22%);
